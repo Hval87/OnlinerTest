@@ -1,0 +1,8 @@
+{
+  "browser": "chrome",
+  "startURL": "https://www.onliner.by/",
+  "version": "1.0.0",
+  "dependencies": {
+    
+  }
+}
