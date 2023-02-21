@@ -1,6 +1,5 @@
 package test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeTest;
 import utils.DataManager;
@@ -14,6 +13,6 @@ public class BaseTest {
         driver=DriverManager.getDriver();
         System.out.println(driver);
         driver.manage().window().maximize();
-        driver.get(DataManager.parseData(JsonType.CONFIG_DATA,"startURL"));
+        driver.get(DataManager.parseData(JsonType.CONFIG,"startURL"));
     }
 }

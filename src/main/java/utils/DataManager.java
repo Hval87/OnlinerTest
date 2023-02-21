@@ -9,8 +9,8 @@ public class DataManager {
 
 
     @SneakyThrows
-    public static String parseData(String path,String key) {
-        try (FileReader reader = new FileReader(FilePathsUtil.getTestPath(path))) {
+    public static String parseData(String jsonType,String key) {
+        try (FileReader reader = new FileReader(FilePathsUtil.getTestPath(jsonType))) {
             JSONParser parser = new JSONParser();
             JSONObject obj = (JSONObject) parser.parse(reader);
             return (String) obj.get(key);

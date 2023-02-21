@@ -15,7 +15,7 @@ public class DriverManager {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            String browser = DataManager.parseData(JsonType.CONFIG_DATA, Constatnt.BROWSER);
+            String browser = DataManager.parseData(JsonType.CONFIG, Constatnt.BROWSER);
 
             switch (browser) {
                 case CHROME:
